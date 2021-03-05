@@ -17,10 +17,9 @@ const StyleButton = (props) => {
       <View style={styles.container}>
         <Pressable
         style={[styles.button, {backgroundColor: backgroundColor}]}
-        onPress={() => {
-          console.warn('Im down here!')
-        }}
+        onPress={() => onPress()}
         >
+          {/* {content} will dynamically insert button text from const declared on line 8*/}
           <Text style={[styles.text, {color: textColor}]}>{content}</Text>
         </Pressable>
       </View>
