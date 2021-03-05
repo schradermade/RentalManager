@@ -5,6 +5,8 @@ import styles from './styles';
 const StyleButton = (props) => {
 
   const type = props.type;
+  const content = props.content;
+  const onPress = props.onPress;
 
   const backgroundColor = type === 'primary' ? 'grey' : 'white';
   const textColor = type === 'primary' ? 'white' : 'grey';
@@ -19,7 +21,7 @@ const StyleButton = (props) => {
           console.warn('Im down here!')
         }}
         >
-          <Text style={[styles.text, {color: textColor}]}>House Avail!</Text>
+          <Text style={[styles.text, {color: textColor}]}>{content}</Text>
         </Pressable>
       </View>
     </View>
