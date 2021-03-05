@@ -5,7 +5,19 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+
+      <View style={styles.homeContainer}>
+         
+         <View>
+           <Text>12345 SW Main St</Text>
+           <Text>3 bed, 2 bath, 1,500sqft</Text>
+           <Text>$1,995/month</Text>
+         </View>
+      
+      </View>
+
+
+
       <StatusBar style="auto" />
     </View>
   );
@@ -18,4 +30,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  homeContainer: {
+
+  }
 });
