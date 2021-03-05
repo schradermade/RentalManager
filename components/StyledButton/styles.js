@@ -14,7 +14,9 @@ const styles = StyleSheet.create({
     borderRadius: 25,
   },
   text: {
-
+    fontSize: 14,
+    fontWeight: '375',
+    textTransform: 'uppercase',
   }
 });
 
