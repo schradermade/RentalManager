@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
-import styles from './style';
-import StyleButton from '../StyledButton';
+import styles from './styles';
+import StyledButton from '../StyledButton';
 
 const HomeItem = (props) => {
   return (
@@ -19,7 +19,7 @@ const HomeItem = (props) => {
           <Text style={styles.subtitle}>$1,995/month</Text>
         </View>
 
-        <StyleButton />
+        <StyledButton />
       </View>
     </View>
   );
