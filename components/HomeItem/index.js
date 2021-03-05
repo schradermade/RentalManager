@@ -19,7 +19,23 @@ const HomeItem = (props) => {
           <Text style={styles.subtitle}>$1,995/month</Text>
         </View>
 
-        <StyledButton />
+        <StyledButton 
+        type='primary' 
+        content={'Get More Info'}
+        onPress={() => {
+          console.warn("Get More Info was pressed");
+        }}
+        />
+
+        <StyledButton 
+        type='secondary' 
+        content={'Not interested'}
+        onPress={() => {
+          console.warn("Not interested was pressed");
+        }}
+        />
+
+
       </View>
     </View>
   );
