@@ -5,18 +5,20 @@ import StyledButton from '../StyledButton';
 
 const HomeItem = (props) => {
 
-  const { address, rentalStats, rentalRate, image } = props;
+  const { name, address, rentalStats, rentalRate, image } = props;
 
   return (
     <View>
       <View style={styles.homeContainer}>
         {/* render background image */}
-        <ImageBackground source={require(image)}
-        style={styles.image}
+        <ImageBackground 
+          source={(image)}
+          style={styles.image}
         />
 
         {/* render titles and subtitles */}
         <View style={styles.titles}>
+          <Text style={styles.title}>{name}</Text>
           <Text style={styles.title}>{address}</Text>
           <Text style={styles.subtitle}>{rentalStats}</Text>
           <Text style={styles.subtitle}>{rentalRate}</Text>
