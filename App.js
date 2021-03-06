@@ -11,6 +11,7 @@ export default function App() {
       address={'12345 SW Main St., Tualatin, OR 97062'}
       rentalStats={'3bd, 2bth, 1500sqft'}
       rentalRate={'$1,995'}
+      image={require('./assets/images/cherry.jpeg')}
       />
       <StatusBar style="auto" />
     </View>
