@@ -2,23 +2,28 @@ import { StyleSheet } from 'react-native';
 
 //declaring styles using StyleSheet.create
 const styles = StyleSheet.create({
+
   homeContainer: {
     width: '100%',
     height: '100%',
   },
+
   titles: {
     marginTop: '35%',
     width: '100%',
     alignItems: 'center',
   },
+
   title: {
     fontSize: 35,
     fontWeight: '400',
   },
+
   subtitle: {
     fontSize: 20,
     color: 'grey',
   },
+
   image: {
     width: '100%',
     height: '100%',
@@ -26,7 +31,15 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
     // position: absolute, so it doesnt push our component underneath
     position: 'absolute',
+  },
+
+  buttonsContainer: {
+    position: 'absolute',
+    bottom: 40,
+    width: '100%',
   }
+
+
 });
 
 export default styles;
