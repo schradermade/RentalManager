@@ -6,7 +6,12 @@ import HomeItem from './components/HomeItem';
 export default function App() {
   return (
     <View style={styles.container}>
-      <HomeItem />
+      <HomeItem 
+      name={'Tualatin Home'}
+      address={'12345 SW Main St., Tualatin, OR 97062'}
+      rentalStats={'3bd, 2bth, 1500sqft'}
+      rentalRate={'$1,995'}
+      />
       <StatusBar style="auto" />
     </View>
   );
