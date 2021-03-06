@@ -4,9 +4,7 @@ import styles from './styles';
 
 const StyleButton = (props) => {
 
-  const type = props.type;
-  const content = props.content;
-  const onPress = props.onPress;
+  const { type, content, onPress } = props;
 
   const backgroundColor = type === 'primary' ? 'grey' : 'white';
   const textColor = type === 'primary' ? 'white' : 'grey';
