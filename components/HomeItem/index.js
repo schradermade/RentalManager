@@ -4,21 +4,24 @@ import styles from './styles';
 import StyledButton from '../StyledButton';
 
 const HomeItem = (props) => {
+
+  const { address, rentalStats, rentalRate, image } = props;
+
   return (
     <View>
       <View style={styles.homeContainer}>
         {/* render background image */}
-        <ImageBackground source={require('../../assets/images/cherry.jpeg')}
+        <ImageBackground source={require(image)}
         style={styles.image}
         />
 
         {/* render titles and subtitles */}
         <View style={styles.titles}>
-          <Text style={styles.title}>12345 SW Main St</Text>
-          <Text style={styles.subtitle}>3 bed, 2 bath, 1,500sqft</Text>
-          <Text style={styles.subtitle}>$1,995/month</Text>
+          <Text style={styles.title}>{address}</Text>
+          <Text style={styles.subtitle}>{rentalStats}</Text>
+          <Text style={styles.subtitle}>{rentalRate}</Text>
         </View>
-        
+
         <View style={styles.buttonsContainer}>
           <StyledButton 
           type='primary' 
@@ -37,8 +40,6 @@ const HomeItem = (props) => {
           }}
           />
         </View>
-
-
 
       </View>
     </View>
