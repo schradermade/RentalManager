@@ -12,7 +12,7 @@ const HomeItem = (props) => {
       <View style={styles.homeContainer}>
         {/* render background image */}
         <ImageBackground 
-          source={(image)}
+          source={image}
           style={styles.image}
         />
 
