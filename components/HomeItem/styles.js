@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: '100%',
-    //reside mode indicates how pic will resize if does not fit on whole screen
+    //resize mode indicates how pic will resize if does not fit on whole screen
     resizeMode: 'cover',
     // position: absolute, so it doesnt push our component underneath
     position: 'absolute',

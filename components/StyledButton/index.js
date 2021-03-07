@@ -4,6 +4,7 @@ import styles from './styles';
 
 const StyleButton = (props) => {
 
+  // destructure with ES6
   const { type, content, onPress } = props;
 
   const backgroundColor = type === 'primary' ? 'grey' : 'white';
