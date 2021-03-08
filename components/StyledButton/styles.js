@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 14,
-    fontWeight: '375',
+    fontWeight: '400',
     textTransform: 'uppercase',
   }
 });
